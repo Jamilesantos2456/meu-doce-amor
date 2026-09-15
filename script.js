@@ -54,7 +54,7 @@ function renderCart() {
 }
 
 function openWhatsApp(text) {
-  window.open('https://wa.me/5547992065529?text=' + encodeURIComponent(text), '_blank');
+  window.open('https://wa.me/554792765611?text=' + encodeURIComponent(text), '_blank');
 }
 
 function finishOrder() {
