@@ -7,7 +7,9 @@
   <title>Jamile • Meu Doce Amor</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
   <header class="topbar">
     <div class="brand">
       <div class="brand-mark">♡</div>
@@ -16,99 +18,166 @@
         <p>Meu Doce Amor</p>
       </div>
     </div>
+
     <a class="header-order" href="#cardapio">Ver cardápio</a>
   </header>
 
   <main>
+
     <section class="hero">
       <div class="hero-copy">
         <span class="eyebrow">Doces e salgados feitos com carinho</span>
+
         <h2>Um pedacinho de amor em cada pedido. 💕</h2>
-        <p>Escolha seus favoritos, monte o pedido e envie tudo direto pelo WhatsApp.</p>
+
+        <p>
+          Escolha seus favoritos, monte o pedido e envie tudo direto pelo WhatsApp.
+        </p>
+
         <div class="hero-actions">
           <a class="btn primary" href="#cardapio">Montar meu pedido</a>
           <a class="btn secondary" href="#como-funciona">Como funciona</a>
         </div>
+
         <div class="delivery-badges">
           <span>🚗 Entrega</span>
           <span>📦 Retirada</span>
           <span>💬 Pedido pelo WhatsApp</span>
         </div>
       </div>
+
       <div class="hero-photo">
         <img src="assets/foto5.png" alt="Delícias da Meu Doce Amor">
       </div>
     </section>
 
+
     <section class="section" id="cardapio">
+
       <div class="section-heading">
         <div>
           <span class="eyebrow">Cardápio</span>
           <h2>Escolha suas delícias</h2>
         </div>
-        <div class="cart-pill">🛒 <span id="cartCount">0</span> itens • <strong id="cartTotal">R$ 0,00</strong></div>
+
+        <div class="cart-pill">
+          🛒 <span id="cartCount">0</span> itens •
+          <strong id="cartTotal">R$ 0,00</strong>
+        </div>
       </div>
 
+
       <div class="category-title">⭐ Mais pedidos</div>
+
       <div class="products">
+
         <article class="product-card">
           <img src="assets/foto2.jpg" alt="Bolo tipo vulcão">
+
           <div class="product-info">
             <span class="tag">Queridinho</span>
+
             <h3>Bolo tipo vulcão</h3>
-            <p>Bolo fofinho com cobertura cremosa e acabamento especial.</p>
+
+            <p>
+              Bolo fofinho com cobertura cremosa e acabamento especial.
+            </p>
+
             <div class="product-bottom">
               <strong>R$ 15,00</strong>
-              <button onclick="addToCart('Bolo tipo vulcão', 15)">Adicionar +</button>
+
+              <button onclick="addToCart('Bolo tipo vulcão', 15)">
+                Adicionar +
+              </button>
             </div>
           </div>
         </article>
+
 
         <article class="product-card">
           <img src="assets/foto4.png" alt="Morango do amor">
+
           <div class="product-info">
             <span class="tag">Especial</span>
+
             <h3>Morango do amor</h3>
-            <p>Morango recheado e coberto com uma deliciosa camada doce.</p>
+
+            <p>
+              Morango recheado e coberto com uma deliciosa camada doce.
+            </p>
+
             <div class="product-bottom">
               <strong>R$ 12,00</strong>
-              <button onclick="addToCart('Morango do amor', 12)">Adicionar +</button>
+
+              <button onclick="addToCart('Morango do amor', 12)">
+                Adicionar +
+              </button>
             </div>
           </div>
         </article>
+
 
         <article class="product-card">
           <img src="assets/foto3.png" alt="Empadinhas">
+
           <div class="product-info">
             <span class="tag">Salgado</span>
+
             <h3>Empadinha</h3>
-            <p>Empadinha caseira, douradinha e feita com carinho.</p>
+
+            <p>
+              Empadinha caseira, douradinha e feita com carinho.
+            </p>
+
             <div class="product-bottom">
               <strong>R$ 4,00</strong>
-              <button onclick="addToCart('Empadinha', 4)">Adicionar +</button>
+
+              <button onclick="addToCart('Empadinha', 4)">
+                Adicionar +
+              </button>
             </div>
           </div>
         </article>
+
       </div>
+
 
       <div class="category-title">🍰 Outras delícias</div>
+
       <div class="products secondary-products">
+
         <article class="product-card">
           <img src="assets/foto1.jpg" alt="Bolo e torta caseira">
+
           <div class="product-info">
+
             <h3>Encomendas especiais</h3>
-            <p>Bolos e outras delícias para momentos especiais. Consulte disponibilidade pelo WhatsApp.</p>
+
+            <p>
+              Bolos e outras delícias para momentos especiais.
+              Consulte disponibilidade pelo WhatsApp.
+            </p>
+
             <div class="product-bottom">
               <strong>Sob consulta</strong>
-              <button onclick="openWhatsApp('Olá! Gostaria de saber quais outras delícias estão disponíveis hoje.')">Consultar</button>
+
+              <button onclick="openWhatsApp('Olá! Gostaria de saber quais outras delícias estão disponíveis hoje.')">
+                Consultar
+              </button>
             </div>
+
           </div>
         </article>
+
       </div>
+
     </section>
 
+
     <section class="order-section" id="pedido">
+
       <div class="order-card">
+
         <div class="section-heading compact">
           <div>
             <span class="eyebrow">Seu pedido</span>
@@ -116,63 +185,178 @@
           </div>
         </div>
 
-        <div id="emptyCart" class="empty">Seu carrinho está vazio. Adicione algum produto acima. 💕</div>
+
+        <div id="emptyCart" class="empty">
+          Seu carrinho está vazio. Adicione algum produto acima. 💕
+        </div>
+
+
         <div id="cartItems" class="cart-items"></div>
 
+
         <div class="form-grid">
-          <label>Seu nome
-            <input id="customerName" type="text" placeholder="Ex.: Maria">
+
+          <label>
+            Seu nome
+            <input
+              id="customerName"
+              type="text"
+              placeholder="Ex.: Maria"
+            >
           </label>
-          <label>Forma de receber
+
+
+          <label>
+            Forma de receber
+
             <select id="deliveryType">
-              <option value="Entrega">Entrega</option>
-              <option value="Retirada">Retirada</option>
+
+              <option value="Entrega">
+                Entrega — R$ 7,00
+              </option>
+
+              <option value="Retirada">
+                Retirada — Grátis
+              </option>
+
             </select>
           </label>
-          <label class="full">Endereço (se for entrega)
-            <input id="address" type="text" placeholder="Rua, número, bairro">
+
+
+          <label class="full">
+            Endereço (se for entrega)
+
+            <input
+              id="address"
+              type="text"
+              placeholder="Rua, número, bairro"
+            >
           </label>
-          <label class="full">Observações
-            <textarea id="notes" rows="3" placeholder="Ex.: sem algum ingrediente, ponto de entrega, horário..."></textarea>
+
+
+          <label class="full">
+            Observações
+
+            <textarea
+              id="notes"
+              rows="3"
+              placeholder="Ex.: sem algum ingrediente, ponto de entrega, horário..."
+            ></textarea>
           </label>
+
         </div>
+
 
         <div class="checkout">
+
           <div>
+
             <span>Total dos produtos</span>
+            <strong id="checkoutProducts">R$ 0,00</strong>
+
+            <br>
+
+            <span>Taxa de entrega</span>
+            <strong id="checkoutDelivery">R$ 7,00</strong>
+
+            <br>
+
+            <span>Total do pedido</span>
             <strong id="checkoutTotal">R$ 0,00</strong>
+
           </div>
-          <button class="btn whatsapp" onclick="finishOrder()">📲 Enviar pedido no WhatsApp</button>
+
+
+          <button
+            class="btn whatsapp"
+            onclick="finishOrder()"
+          >
+            📲 Enviar pedido no WhatsApp
+          </button>
+
         </div>
-        <p class="small-note">A taxa de entrega, quando houver, é combinada pelo WhatsApp.</p>
+
+
+        <p class="small-note">
+          🚗 Entrega: R$ 7,00 • 📦 Retirada: grátis
+        </p>
+
       </div>
+
     </section>
 
+
     <section class="how" id="como-funciona">
+
       <div class="section-heading">
+
         <div>
           <span class="eyebrow">É fácil</span>
           <h2>Como funciona?</h2>
         </div>
+
       </div>
+
+
       <div class="steps">
-        <div><b>1</b><h3>Escolha</h3><p>Adicione os produtos ao carrinho.</p></div>
-        <div><b>2</b><h3>Preencha</h3><p>Informe seu nome e escolha entrega ou retirada.</p></div>
-        <div><b>3</b><h3>Envie</h3><p>O pedido abre pronto no WhatsApp da Jamile.</p></div>
+
+        <div>
+          <b>1</b>
+          <h3>Escolha</h3>
+          <p>Adicione os produtos ao carrinho.</p>
+        </div>
+
+
+        <div>
+          <b>2</b>
+          <h3>Preencha</h3>
+          <p>
+            Informe seu nome e escolha entrega ou retirada.
+          </p>
+        </div>
+
+
+        <div>
+          <b>3</b>
+          <h3>Envie</h3>
+          <p>
+            O pedido abre pronto no WhatsApp da Jamile.
+          </p>
+        </div>
+
       </div>
+
     </section>
+
   </main>
 
+
   <footer>
+
     <strong>Jamile • Meu Doce Amor</strong>
+
     <p>Feito com carinho 💕</p>
-    <a href="https://wa.me/5547992765611" target="_blank">WhatsApp: (47) 992765611</a>
+
+    <a
+      href="https://wa.me/5547992765611"
+      target="_blank"
+    >
+      WhatsApp: (47) 99276-5611
+    </a>
+
   </footer>
 
-  <div class="floating-cart" onclick="document.getElementById('pedido').scrollIntoView({behavior:'smooth'})">
-    🛒 <span id="floatingCount">0</span> • <strong id="floatingTotal">R$ 0,00</strong>
+
+  <div
+    class="floating-cart"
+    onclick="document.getElementById('pedido').scrollIntoView({behavior:'smooth'})"
+  >
+    🛒 <span id="floatingCount">0</span> •
+    <strong id="floatingTotal">R$ 0,00</strong>
   </div>
 
+
   <script src="script.js"></script>
+
 </body>
 </html>
