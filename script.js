@@ -198,3 +198,11 @@ if (deliveryType) {
 
 // Inicia o carrinho
 renderCart();
+// CONTROLE DE FUNCIONAMENTO DO SITE
+const SITE_FECHADO = true;
+
+const avisoFechado = document.getElementById('site-fechado');
+
+if (avisoFechado) {
+  avisoFechado.style.display = SITE_FECHADO ? 'flex' : 'none';
+}
