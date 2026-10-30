@@ -199,7 +199,7 @@ if (deliveryType) {
 // Inicia o carrinho
 renderCart();
 // CONTROLE DE FUNCIONAMENTO DO SITE
-const SITE_FECHADO = true;
+const SITE_FECHADO = falar ;
 
 const avisoFechado = document.getElementById('site-fechado');
 
